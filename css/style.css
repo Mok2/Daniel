@@ -1,0 +1,296 @@
+*{
+    padding: 0% !important;
+    margin: 0% !important;
+    box-sizing: border-box !important;
+}
+*:focus {
+    outline: none;
+}
+:root{
+    --white-color:white;
+    --second-white-color:#F7F7F7;
+    --card-color:#5B5B5B;
+    --black-color:black;
+    --footer-color:#1C1C1C;
+}
+.dots::before{
+    content: "";
+    background-image: url(../images01/dots.png);
+    position: absolute;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100% ;
+}
+.bg-img{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-second-white{
+    background-color: var(--second-white-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.left-0{
+    left:0;
+}
+.right-0{
+    right:0;
+}
+/* Home */
+#Home{
+    height: 100vh;
+    background-image: url(../images01/images0101.jpg);
+    background-color: rgba(0, 0, 0, 0.57);
+    background-blend-mode: soft-light;
+}
+
+#Home p::after{
+    content: "";
+   font-weight: 600;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    animation: textslider steps(34) 5s infinite;
+}
+@keyframes textslider {
+    3%{
+        content: "|";
+    }
+    6%{
+        content: "D|";
+    }
+    9%{
+        content: "DE|";
+    }
+    12%{
+        content: "DES|";
+    }
+    15%{
+        content: "DESI|";
+    }
+    18%{
+        content: "DESIG|";
+    }
+    21%{
+        content: "DESIG|";
+    }
+    24%{
+        content: "DESIGN|";
+    }
+    27%{
+        content: "DESIGNE|";
+    }
+    30%{
+        content: "DESIGNER|";
+    }
+    33%{
+        content: "DESIGNE|";
+    }
+    36%{
+        content: "DESIGN|";
+    }
+    39%{
+        content: "DESIG|";
+    }
+    42%{
+        content: "DESI|";
+    }
+    45%{
+        content: "DES|";
+    }
+    48%{
+        content: "DE|";
+    }
+    51%{
+        content: "DE|";
+    }
+    54%{
+        content: "DEV|";
+    }
+    57%{
+        content: "DEVO|";
+    }
+    60%{
+        content: "DEVOL|";
+    }
+    63%{
+        content: "DEVOLO|";
+    }
+    66%{
+        content: "DEVOLOP|";
+    }
+    69%{
+        content: "DEVOLOPE|";
+    }
+    72%{
+        content: "DEVOLOPER|";
+    }
+    75%{
+        content: "DEVOLOPE|";
+    }
+    78%{
+        content: "DEVOLOP|";
+    }
+    81%{
+        content: "DEVOLO|";
+    }
+    84%{
+        content: "DEVOL|";
+    }
+    87%{
+        content: "DEVO|";
+    }
+    90%{
+        content: "DEV|";
+    }
+    93%{
+        content: "DE|";
+    }
+    96%{
+        content: "D|";
+    }
+    98%{
+        content: "|";
+    }
+    100%{
+        content: "";
+    }
+}
+#navbar-deafult a{
+    color:var(--white-color);
+}
+#navbar a{
+    color: var(--black-color) ;
+}
+/* About */
+#About .bg-lg{
+   box-shadow: 5px 10px 20px 5px lightgrey inset !important;
+}   
+#About figure::after{
+content: "";
+position: absolute;
+background-image: url(../images01/dots.png);
+bottom: 0;
+z-index: 1;
+left: -30px;
+height: 60%;
+width: 10%;
+}
+#About figure::before{
+content: "";
+position: absolute;
+background-image: url(../images01/dots.png);
+bottom: -26px;
+z-index: 1;
+left: -30px;
+width:  60%;
+height: 10%;
+}
+#About .lg{
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+#About .w-95{
+    width: 95%;
+}
+#About .w-80{
+    width: 80%;
+}
+#About .w-90{
+    width: 90%;
+}
+.a1,#About .a2{
+transition: .2s linear;
+}
+.a1:hover{
+    background-color: var(--white-color) !important;
+    color: var(--black-color) !important;
+    border: solid var(--black-color) 1px;
+}
+#About .a2:hover{
+    background-color: var(--black-color) !important;
+    color: var(--white-color) !important;
+}
+/* Services */
+ .icon{
+    transition: .2s linear;
+}
+ .i-tr:hover .icon{
+background-color: var(--black-color) !important;
+color: var(--white-color) !important;
+}  
+ /*protfolio*/
+ #protfolio figcaption{
+    top:25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    background-color:  var(--white-color);
+    z-index: 2;
+
+    opacity: 0;
+    transition: .2s ease;
+}
+#protfolio h6{
+    transition: 0.2s;
+}
+#protfolio .img:hover h6{
+    padding-bottom: 10px !important;
+}
+#protfolio .img:hover figcaption{
+    opacity: 1;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: var(--white-color);
+    background-color: var(--footer-color);
+}
+.nav-link{
+    color: var(--black-color);
+}
+/* Testimonial */
+#Testimonial .img-width{
+    width: 150px !important;
+    height: 150px !important;
+}
+
+/* OurTeam */
+#OurTeam figcaption{
+    top:50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    background-color:  var(--white-color);
+    z-index: 2;
+    opacity: 0;
+    transition: transform  .3s linear;
+    transition: .3s ease;
+}
+ #OurTeam .team-card:hover figcaption{
+transform: rotateY(360deg);
+opacity: 1;
+top:5px;
+left: 5px;
+right: 5px;
+bottom: 5px;
+
+}
+#OurTeam figure img{
+transition: transform 0.3s linear;
+}
+#OurTeam figure:hover img{
+    transform: scale(1.2);
+}
+#OurTeam .team-card .data{
+    background-color: var(--card-color);
+}
+/* footer */
+#footer{
+    background-color: var(--footer-color);
+}
